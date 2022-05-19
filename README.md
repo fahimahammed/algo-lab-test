@@ -1,6 +1,6 @@
 # CSE 2222: Design and Analysis of Algorithm Lab
 
-### Problem-A: Adjanccent Matrix
+## Problem-A: Adjanccent Matrix
 
 We will consider the numbers a and b as adjacent if they differ by exactly one, that is, |a−b|=1.
 
@@ -42,7 +42,7 @@ Output
 ```
 
 
-### Problem-B: Beautiful String 
+## Problem-B: Beautiful String 
 A string is called beautiful if no two consecutive characters are equal. For example, "ababcb", "a" and "abab" are beautiful strings, while "aaaaaa", "abaa" and "bb" are not.
 
 Ahcl wants to construct a beautiful string. He has a string s, consisting of only characters 'a', 'b', 'c' and '?'. Ahcl needs to replace each character '?' with one of the three characters 'a', 'b' or 'c', such that the resulting string is beautiful. Please help him!
@@ -85,3 +85,44 @@ In the second test case, it is impossible to create a beautiful string, because 
 In the third test case, the only answer is "acbac".
 
 
+## Problem-C: From A to B
+Vasily has a number a, which he wants to turn into a number b. For this purpose, he can do two types of operations:
+
+- multiply the current number by 2 (that is, replace the number x by 2·x);
+- append the digit 1 to the right of current number (that is, replace the number x by 10·x + 1).
+
+You need to help Vasily to transform the number a into the number b using only the operations described above, or find that it is impossible.
+
+Note that in this task you are not required to minimize the number of operations. It suffices to find any way to transform a into b.
+
+##### Input
+The first line contains two positive integers a and b (1 ≤ a < b ≤ 109) — the number which Vasily has and the number he wants to have.
+
+##### Output
+If there is no way to get b from a, print "NO" (without quotes).
+
+Otherwise print three lines. On the first line print "YES" (without quotes). The second line should contain single integer k — the length of the transformation sequence. On the third line print the sequence of transformations x1, x2, ..., xk, where:
+
+- x1 should be equal to a,
+- xk should be equal to b,
+- xi should be obtained from xi - 1 using any of two described operations (1 < i ≤ k).
+- If there are multiple answers, print any of them.
+
+Input
+```bash
+2 162
+```
+Output
+```bash
+YES
+5
+2 4 8 81 162 
+```
+
+| Input  | 
+|---|
+| ```bash
+2 162
+```  |
+|   |
+|   |
